@@ -1,1 +1,1 @@
-# MongoDB company base app
+# MongoDB / Mongoose database
