@@ -12,7 +12,7 @@ it('should throw an error if no "name" arg', async () => {
 
 });
 
-it('should throw an error if "name" is not a string', () => {
+it('should throw an error if "name" is not a string', async() => {
 
   const cases = [{}, []];
   for(let name of cases) {
@@ -27,7 +27,7 @@ it('should throw an error if "name" is not a string', () => {
 });
 
 
-it('should throw an error if "name" is too short or too long', () => {
+it('should throw an error if "name" is too short or too long', async() => {
 
   const cases = ['test', 'abcd', 'LoremIpsumLoremIpsumLoremIpsumLoremUpsum, Lorem Ip']; 
   for(let name of cases) {
@@ -42,7 +42,7 @@ it('should throw an error if "name" is too short or too long', () => {
 });
 
 
-it('should not throw an error if "name" is okay', () => {
+it('should not throw an error if "name" is okay', async() => {
 
   const cases = ['Testowanazwa', 'Testowanie name'];
   for(let name of cases) {
